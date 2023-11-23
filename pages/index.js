@@ -53,28 +53,28 @@ export default function Home() {
           src='/assets/blue.png'
           width={500}
           height={300}
-          alt='logo'
+          alt='blue'
         />
         <Image
           className='rounded-md hover:scale-125 transition-transform'
           src='/assets/gold.png'
           width={500}
           height={300}
-          alt='logo'
+          alt='gold'
         />
         <Image
           className='rounded-md hover:scale-125 transition-transform'
           src='/assets/green.png'
           width={500}
           height={300}
-          alt='logo'
+          alt='green'
         />
         <Image
           className='rounded-md hover:scale-125 transition-transform'
           src='/assets/purple.png'
           width={500}
           height={300}
-          alt='logo'
+          alt='purple'
         />
       </div>
 
@@ -83,13 +83,13 @@ export default function Home() {
         {/* Logo */}
         <Image
           className='pb-12'
-          src='/assets/logo.png'
-          width={100}
+          src='/assets/logo2.png'
+          width={180}
           height={300}
           alt='logo'
         />
         {/* Login form */}
-        <p className='text-gray-800 font-semibold pb-4'>Login to Prepr</p>
+        <p className='text-gray-800 font-semibold pb-4'>Login to PreprLabs</p>
         <form
           action='submit'
           className='flex flex-col justify-center max-w-sm mx-auto text-black'
@@ -114,7 +114,7 @@ export default function Home() {
         <button
           onClick={handleLogin}
           className={
-            "bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4 hover:scale-105 transition-transform onclick:animate-bounce"
+            "bg-green-500 flex gap-2  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4 hover:scale-105 active:scale-95 transition duration-150 shadow-md ease-out"
           }
         >
           Login
@@ -122,7 +122,7 @@ export default function Home() {
 
         <button
           onClick={() => signIn("google")}
-          className='bg-gray-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4 flex  hover:scale-105 transition-transform'
+          className='bg-gray-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4 flex hover:scale-105 active:scale-95 transition duration-150 shadow-md ease-out'
         >
           <Image
             src='/assets/google.png'

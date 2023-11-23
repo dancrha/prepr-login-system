@@ -23,16 +23,28 @@ function Success() {
       <div className='bg-white text-black p-8 rounded-md flex flex-col justify-center items-center'>
         <Image
           className='pb-4'
-          src='/assets/logo.png'
-          width={100}
+          src='/assets/logo2.png'
+          width={170}
           height={300}
           alt='logo'
         />
+        {session && (
+          <>
+            <img className='rounded-full' src={session.user.image} alt='' />
+            <p className='my-4'>Welcome, {session.user.name}</p>
+          </>
+        )}
         You have successfully logged in with Google.
         <button
           onClick={handleLogout}
-          className='bg-gray-500 p-2 rounded-md mt-4'
+          className='bg-red-500 flex gap-2 text-white p-2 rounded-md mt-4'
         >
+          <img
+            src='/assets/logout.png'
+            alt='logout'
+            width={25}
+            className='mt-1'
+          />
           Log out
         </button>
       </div>

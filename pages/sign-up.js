@@ -60,32 +60,32 @@ export default function Page() {
       <div className='grid grid-cols-2 grid-rows-2 gap-2'>
         {/* Images */}
         <Image
-          className='rounded-md'
+          className='rounded-md hover:scale-125 transition-transform'
           src='/assets/blue.png'
-          width={400}
+          width={500}
           height={300}
-          alt='logo'
+          alt='blue'
         />
         <Image
-          className='rounded-md'
+          className='rounded-md hover:scale-125 transition-transform'
           src='/assets/gold.png'
-          width={400}
+          width={500}
           height={300}
-          alt='logo'
+          alt='gold'
         />
         <Image
-          className='rounded-md'
+          className='rounded-md hover:scale-125 transition-transform'
           src='/assets/green.png'
-          width={400}
+          width={500}
           height={300}
-          alt='logo'
+          alt='green'
         />
         <Image
-          className='rounded-md'
+          className='rounded-md hover:scale-125 transition-transform'
           src='/assets/purple.png'
-          width={400}
+          width={500}
           height={300}
-          alt='logo'
+          alt='purple'
         />
       </div>
 
@@ -94,13 +94,15 @@ export default function Page() {
         {/* Logo */}
         <Image
           className='pb-4'
-          src='/assets/logo.png'
-          width={100}
+          src='/assets/logo2.png'
+          width={150}
           height={300}
           alt='logo'
         />
         {/* Form inputs */}
-        <p className='text-black font-semibold pb-4'>Create a Prepr Account</p>
+        <p className='text-black font-semibold pb-4'>
+          Create a PreprLabs Account
+        </p>
         <input
           type='text'
           name='firstName'
@@ -182,14 +184,14 @@ export default function Page() {
           onClick={handleRegister}
           id='submitButton'
           type='submit'
-          className='bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4'
+          className='bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4 hover:scale-105 active:scale-95 transition duration-150 shadow-md ease-out'
         >
           Register
         </button>
-        <p className='text-black text-xs'>Already have an account?</p>
+        <p className='text-black text-sm'>Already have an account?</p>
         <Link
           href='/'
-          className='text-blue-500 hover:text-blue-800 focus:outline-none text-xs'
+          className='text-blue-500 hover:text-blue-800 focus:outline-none text-sm'
         >
           Login
         </Link>

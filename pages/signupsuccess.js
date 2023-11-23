@@ -37,8 +37,8 @@ function SignupSuccess() {
         <Image
           className='pb-4
           '
-          src='/assets/logo.png'
-          width={100}
+          src='/assets/logo2.png'
+          width={170}
           height={300}
           alt='logo'
         />

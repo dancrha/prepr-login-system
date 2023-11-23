@@ -23,7 +23,7 @@ function Success() {
         You have successfully logged in.
         <button
           onClick={handleLogout}
-          className='bg-red-500 flex gap-2 text-white p-2 rounded-md mt-4'
+          className='bg-red-500 flex gap-2 text-white p-2 rounded-md mt-4 hover:scale-105 active:scale-95 transition duration-150 shadow-md ease-out'
         >
           <img
             src='/assets/logout.png'

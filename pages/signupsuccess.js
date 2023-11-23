@@ -29,7 +29,7 @@ function SignupSuccess() {
     <div className='bg-[#afdb88] w-full h-screen flex justify-center items-center gap-4'>
       <button
         onClick={() => router.push("/")}
-        className='absolute left-5 top-5 text-black bg-white p-4 rounded-md shadow-md'
+        className='absolute left-5 top-5 text-black bg-white p-4 rounded-md shadow-md hover:scale-105 active:scale-95 transition duration-150 ease-out'
       >
         Back
       </button>
